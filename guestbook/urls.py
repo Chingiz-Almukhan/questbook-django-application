@@ -1,10 +1,10 @@
 from django.urls import path
 
-from views.base import index_view
-from views.add_view import add
-from views.edit_view import edit
-from views.delete_view import delete
-from views.search_view import search_view
+from guestbook.views.base import index_view
+from guestbook.views.add_view import add
+from guestbook.views.edit_view import edit
+from guestbook.views.delete_view import delete
+from guestbook.views.search_view import search_view
 
 urlpatterns = [
     path('', index_view, name='main'),
