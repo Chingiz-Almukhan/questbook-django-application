@@ -1,0 +1,15 @@
+{% csrf_token %}
+
+<div class="form-group">
+    <div class="input-group">
+        {{ search_form.search }}
+        <span class="input-group-btn">
+                <button class="btn btn-success" type="submit">
+                Поиск
+                </button>
+        </span>
+    </div>
+    {% for error in search_form.errors %}
+        <p class="alert alert-danger" role="alert">Введите автора</p>
+    {% endfor %}
+</div>
