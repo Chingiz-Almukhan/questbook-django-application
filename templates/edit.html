@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Edit task {% endblock %}
+
+{% block content %}
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Редактировать</h5>
+                            <form class="" action="{% url 'edit' guest.pk %}" method="POST">
+                                {% include 'partial/add_edit_form.html' with button_text='Сохранить' %}
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
