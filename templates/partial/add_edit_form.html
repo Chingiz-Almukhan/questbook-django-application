@@ -4,7 +4,7 @@
     <div class="form-outline">
         {{ form.author }}
         {% for error in form.author.errors %}
-            <p class="alert alert-danger" role="alert">{{ error }}</p>
+            <p class="alert alert-danger" role="alert">Введите автора</p>
         {% endfor %}
     </div>
 </div>
@@ -13,7 +13,7 @@
     <div class="form-outline">
         {{ form.email }}
         {% for error in form.email.errors %}
-            <p class="alert alert-danger" role="alert">{{ error }}</p>
+            <p class="alert alert-danger" role="alert">Введите почту</p>
         {% endfor %}
     </div>
 </div>
@@ -21,7 +21,7 @@
     <div class="form-outline">
         {{ form.text }}
         {% for error in form.text.errors %}
-            <p class="alert alert-danger" role="alert">{{ error }}</p>
+            <p class="alert alert-danger" role="alert">Введите текст</p>
         {% endfor %}
     </div>
 </div>
